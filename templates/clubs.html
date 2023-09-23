@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clubs Summary</title>
+</head>
+<body>
+
+{#------------ CLUBS------------------#}
+<h3>Clubs:</h3>
+<ul>
+    {% for club in clubs %}
+        <li>
+            {{ club['name'] }}<br/>
+            Current Points Balance: {{ club['points'] }}<br/>
+        </li>
+        <hr/>
+    {% endfor %}
+</ul>
+
+<a href="javascript:history.back()">Back</a>
+
+
+</body>
+</html>
